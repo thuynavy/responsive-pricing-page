@@ -4,3 +4,20 @@
 .box-shadow { 
     box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); 
     }
+.last-line {
+  list-style-type: none;
+  display:flex;
+  justify-content: flex-start;
+  margin:50px;
+  padding: 80px;
+  
+}
+.last-line a{
+  text-decoration: none;
+  color: blue;
+  padding: 20px;
+}
+.last-line a:hover{
+  text-decoration: none;
+  color: rgb(175, 54, 54);
+}

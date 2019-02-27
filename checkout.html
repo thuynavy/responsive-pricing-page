@@ -29,58 +29,268 @@
             Checkout Form
           </h4>
 
-          <p class="lead">
+          <p class="lead mb-5">
             Below is an example form built entirely with Bootstrap's form
             controls. Each required form group has a validation state that can
             be triggered by attempting to submit the form without completing it.
           </p>
         </div>
       </header>
+
       <form>
+        <div class="row">
+        <div class="col-8">
+            <h4>Billing address</h4>
+        <div class="row mb-4 mt-4">
+          <div class="col">
+            <label for="inputFirstName">First Name</label>
+            <input type="text" class="form-control" placeholder="e.g. Taylor" />
+          </div>
+
+          <div class="col">
+            <label for="inputLastName">Last Name</label>
+            <input type="text" class="form-control" placeholder="e.g. Swift" />
+          </div>
+        </div>
+
+        <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+        <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+            <div class="input-group-text">@</div>
+            </div>
+        <input type="text" class="form-control" placeholder="e.g. Drama Queen">
+        </div>
+
         <div class="form-group">
-          <label for="inputFirstName">First Name</label>
+          <label for="inputEmail">Email (Optional)</label>
           <input
-            type="name"
+            type="email"
             class="form-control"
-            id="inputFirstName"
-            aria-describedby="nameHelp"
-            placeholder="e.g. Taylor"
+            placeholder="badblood@gmail.com"
           />
-          <small id="emailHelp" class="form-text text-muted"
-            >You may enter your nickname if you prefer.</small
+        </div>
+
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="12 Ton Dan, VN"
+          />
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2 (Optional)</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+            placeholder="Beverly Hills, USA"
+          />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-5">
+            <label for="inputCountry">Country</label>
+            <select id="inputCountry" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="inputDistrict">District</label>
+            <select id="inputDistrict" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-3">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip" />
+          </div>
+        </div>
+
+        <div class="custom-control custom-checkbox mt-5">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customCheck1"
+          />
+          <label class="custom-control-label" for="customCheck1"
+            >Shipping address is the same as my billing address.</label
           >
         </div>
-        <div class="form-group">
-          <label for="inputLastName">Last Name</label>
+
+        <div class="custom-control custom-checkbox mb-5">
           <input
-            type="name"
-            class="form-control"
-            id="inputLastName"
-            placeholder="e.g. Swift"
+            type="checkbox"
+            class="custom-control-input"
+            id="customCheck1"
           />
-        </div>
-        <div class="form-group">
-                <label for="inputUsername">Username</label>
-                <input
-                  type="name"
-                  class="form-control"
-                  placeholder="Username"
-            />
-        </div>
-        <div class="form-group">
-                <label for="inputEmail">Email (Optional)</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="you@gmail.com"
-            />
+          <label class="custom-control-label" for="customCheck1"
+            >Save this information for next time.</label
+          >
         </div>
 
+        <h4>Payment</h4>
+        <div class="custom-control custom-radio mt-3">
+          <input
+            type="radio"
+            id="customRadio1"
+            name="customRadio"
+            class="custom-control-input"
+          />
+          <label class="custom-control-label" for="customRadio1"
+            >Credit card</label
+          >
+        </div>
+        <div class="custom-control custom-radio">
+          <input
+            type="radio"
+            id="customRadio2"
+            name="customRadio"
+            class="custom-control-input"
+          />
+          <label class="custom-control-label" for="customRadio2"
+            >Debit card</label
+          >
+        </div>
+        <div class="custom-control custom-radio">
+                <input
+                  type="radio"
+                  id="customRadio2"
+                  name="customRadio"
+                  class="custom-control-input"
+                />
+                <label class="custom-control-label" for="customRadio2"
+                  >Paypal</label
+                >
+        </div>
+        
+        <div class="row mb-2 mt-4">
+                    <div class="col">
+                      <label for="inputFirstName">Name on card</label>
+                      <input type="text" class="form-control" />
+                      <small id="emailHelp" class="form-text text-muted">Full name as displayed on card.</small>
+                    </div>
+          
+                    <div class="col">
+                      <label for="inputLastName">Credit card number</label>
+                      <input type="text" class="form-control" />  
+                    </div>
+        </div>
 
+        <div class="col-6">
+            <div class="row mt-4 mb-4">
+              <div class="col">
+                <label for="inputExp">Expiration</label>
+                <input type="text" class="form-control" />
+              </div>
+    
+              <div class="col">
+                <label for="inputCVV">CVV</label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-primary btn-danger btn-block mt-4"
+        >
+          Continue to checkout
+        </button>
+
+      </div>
       </form>
 
+      <div class="col-4">
+            <h6 class="mb-4">Your cart</h6>
+            <table class="table table-bordered">
+                    <thead>
+                            <tr>
+                              <th scope="col">Description</th>
+                              <th scope="col">Price</th>
+                            </tr>
+                        </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">
+                            <div >
+                                Product name
+                            </div>
+                            <div class="text-muted">
+                                Web Design Bootcamp
+                            </div>
+                        </th>
+                        <td>4.9 M</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            <div >
+                                Second product
+                            </div>
+                            <div class="text-muted">
+                                React + React Native
+                            </div>
+                        </th>
+                        <td>14.9 M</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            <div >
+                                Third item
+                            </div>
+                            <div class="text-muted">
+                                Machine Learning
+                            </div>
+                        </th>
+                        <td>10.0 M</td>
+                      </tr>
+                      <tr>
+                            <th scope="row" class="table-secondary">
+                            <div class="text-success">
+                                Promo Code
+                            </div>
+                            <div class="text-success">
+                                EXAMPLECODE
+                            </div>
+                            </th>
+                            <td class="table-secondary text-success">- 7.5 M</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            Total (VND)
+                        </th>
+                        <td>22.3 M</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                
+                  <table class="table table-bordered">
+                        <tr>
+                          <td>
+                            <table class="table">
+                              <th class="text-secondary">Promo code</th>
+                            </table>
+                          </td>
+                          <td class="table-dark" style="text-align:center">Redeem</td>
+                        </tr>
+                      </table>
+
+    
       <section></section>
       <footer></footer>
     </div>
+
+    <div>
+            <ul class="last-line">
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Terms</a></li>
+              <li><a href="">Support</a></li>
+            </ul>
+          </div>
   </body>
 </html>
